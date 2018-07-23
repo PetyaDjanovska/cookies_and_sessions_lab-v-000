@@ -1,4 +1,4 @@
-<% if !session[:cart].blank? %>
+<% if cart.blank? %>
   <% session[:cart].each do |product| %>
     <%= product %>
   <% end %>
